@@ -1,0 +1,30 @@
+name: Workflow Events
+on: 
+  push: 
+    branches: 
+      - actions
+    
+jobs:
+  Sample-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show OS 
+        run: |
+          echo "This job is running on an Ubuntu runners"
+          echo "$RUNNER_OS"
+       
+  Sample-2:
+    runs-on: windows-latest
+    steps:
+      - name: Show OS
+        run: |
+          echo "This job is running on an Windows runners"
+          echo "$RUNNER_OS"
+
+  Sample-3:
+    runs-on: macos-latest
+    steps:
+      - name: Show OS 
+        run: |
+          echo "This job is running on an Macos runners"
+          echo "$RUNNER_OS"
