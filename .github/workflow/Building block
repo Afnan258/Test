@@ -16,5 +16,5 @@ job:
        run: echo"I will fail"
   step: 
     -  name: say goodbye
-       run: echo"Goodbye!"
+       run: echo "Goodbye!"
 
