@@ -1,5 +1,7 @@
 name: Workflow Events
-on: pull_request
+on: 
+  pull_request:
+    types: [ open, closed ]
 
 jobs:
   Sample-1:
