@@ -23,7 +23,7 @@ jobs:
 
   Sample-3:
     runs-on: macos-latest
-    teps:
+    steps:
       - name: Show OS 
         run: |
           echo "This job is running on an Ubuntu runners"
