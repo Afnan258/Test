@@ -1,0 +1,21 @@
+name: Workflow_dispatch
+on: push
+
+jobs:
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello 
+        run: echo "Hello , World!"
+       
+  echo-goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail step
+        run: echo "I will fail" 
+      - name: say goodbye
+        run: echo "Goodbye!"
+      - name: failed step
+        run: |
+          echo "failed 1"
+          exit 1
