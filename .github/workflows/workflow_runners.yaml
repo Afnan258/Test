@@ -2,7 +2,7 @@ name: Workflow Events
 on: 
   push: 
     branches: 
-      - action
+      - actionS
     
 jobs:
   Sample-1:
