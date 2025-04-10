@@ -1,4 +1,4 @@
-name: Workflow_dispatch
+name: workflow_dispatch
 on: push
 
 jobs:
