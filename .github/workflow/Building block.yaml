@@ -4,7 +4,7 @@ on: push
 job:
   echo-hello:
   runs_on: ubuntu-latest
-  step:
+  steps:
     -  name: Say Hello 
        run: echo "Hello , World!"
   echo-goodbye:
