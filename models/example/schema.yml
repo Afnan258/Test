@@ -8,11 +8,10 @@ models:
           - name: id
             description: "The primary key for this table"
             tests: 
-              - not_null 
+              - not_null
               - accepted_values:
-                  values:
-                    - "1" 
-                    
+                  values: [1]
+
     - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
